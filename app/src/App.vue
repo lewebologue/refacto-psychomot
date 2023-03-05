@@ -26,13 +26,15 @@ import { RouterLink, RouterView } from 'vue-router'
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto">
-          <a href="./pages/about.html" class="nav-item nav-link d-flex justify-content-end"
-            >Quand consulter?</a
+          <RouterLink to="/about" class="nav-item nav-link d-flex justify-content-end"
+            >Quand consulter?</RouterLink
           >
-          <a href="./pages/parcours.html" class="nav-item nav-link d-flex justify-content-end"
-            >Mon parcours</a
+          <RouterLink to="/about" class="nav-item nav-link d-flex justify-content-end"
+            >Mon parcours</RouterLink
           >
-          <a href="#map" class="nav-item nav-link d-flex justify-content-end">Où me trouver?</a>
+          <RouterLink to="/about" class="nav-item nav-link d-flex justify-content-end"
+            >Où me trouver?</RouterLink
+          >
           <a
             href="https://docorga.com/praticien/62cd6595ac9ec0761018cbd2"
             target="_blank"
@@ -45,8 +47,10 @@ import { RouterLink, RouterView } from 'vue-router'
           href="https://docorga.com/praticien/62cd6595ac9ec0761018cbd2"
           target="_blank"
           class="btn btn-primary rounded-pill px-3 d-none d-lg-block"
-          >Prendre RDV<i class="fa fa-arrow-right ms-3"></i
-        ></a>
+        >
+          Prendre RDV
+          <i class="fa fa-arrow-right ms-3"></i>
+        </a>
       </div>
     </nav>
   </div>
